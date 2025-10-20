@@ -18,11 +18,17 @@ source ~/miniconda3/bin/activate
 conda init --all
 ```
 
-## Create a new env
+## Installing ipykernel via conda-forge
 
 ```sh
-conda create --name newenv python=3.10.0 -y
-# Replace 'newenv' with any environment name & verşion you prefer 
+conda install -c conda-forge ipykernel -y
+```
+
+## Create a new env
+### Replace 'newenv' with any environment name & verşion you prefer 
+
+```sh
+conda create --name newenv python=3.10.0 -y ipykernel
 ```
 
 ## Activate the env
